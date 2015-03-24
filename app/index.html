@@ -170,6 +170,11 @@
                                 </a>
                             </li>
                             <!-- /ko -->
+                            <li data-bind="css: { active: currentActiveTabIndex() === -3}">
+                                <a data-bind="click: function () { currentActiveTabIndex(-3); }" href="#sys-book-index" role="tab" data-toggle="tab">
+                                    <span class="glyphicon glyphicon-globe"></span>&nbsp;Systems Programming Book
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="tab-content">
@@ -243,6 +248,9 @@
                         <div class="tab-pane man-page-tab"
                              data-bind="attr: { id: 'man-page-tab-' + $index() }, html: tabHtml, css: { active: $parent.currentActiveTabIndex() === $index()}"></div>
                         <!-- /ko -->
+                        <div class="tab-pane man-page-tab" id="systems-programming-book" data-bind="css: { active: currentActiveTabIndex() === -3}">
+
+                        </div>
                     </div>
                 </div>
 

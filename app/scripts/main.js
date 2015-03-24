@@ -59,7 +59,7 @@ $(document).ready(function () {
             url: 'http://cs-education.github.io/sysassets/man_pages/sys_man_page_index.min.json'
         }
     });
-
+    $('#systems-programming-book').load('https://github.com/angrave/SystemProgramming/wiki', '','');
     manPages.initialize();
 
     var lastSelectedManPage = null;
